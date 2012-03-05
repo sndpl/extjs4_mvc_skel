@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>Application Title</title>
+    <style>
+        #loading-mask {
+            background-color: white;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: 20000;
+        }
+
+        #loading {
+            height: auto;
+            position: absolute;
+            left: 40%;
+            top: 40%;
+            padding: 2px;
+            z-index: 20001;
+        }
+
+        #loading a {
+            color: #225588;
+        }
+
+        #loading .loading-indicator {
+            background: white;
+            color: #444;
+            font: bold 13px Helvetica, Arial, sans-serif;
+            height: auto;
+            margin: 0;
+            padding: 10px;
+        }
+
+        #loading-msg {
+            font-size: 10px;
+            font-weight: normal;
+        }
+    </style>
+
+    <!-- Ext JS -->
+    <link rel="stylesheet" type="text/css" href="/extjs/resources/css/ext-all.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script type="text/javascript" src="/extjs/ext-all-dev.js"></script>
+
+    <!-- Application -->
+    <script type="text/javascript" src="config/environment.js"></script>
+    <script type="text/javascript" src="config/development.js"></script>
+    <script type="text/javascript" src="config/router.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+<div id="loading-mask" style=""></div>
+<div id="loading">
+    <div class="loading-indicator">
+        <img src="/images/logo.gif"><br/>
+        <img src="/images/loader.gif" width="32" height="32"
+             style="margin-right:8px;float:left;vertical-align:top;"/>
+        Application title - <a href="http://your.company.com" target="_blank">company.com</a>
+        <br/><span id="loading-msg">Loading application...</span>
+    </div>
+</div>
+<form id="history-form" class="x-hide-display">
+    <input type="hidden" id="x-history-field"/>
+    <iframe id="x-history-frame"></iframe>
+</form>
+</body>
+</html>

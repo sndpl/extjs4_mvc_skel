@@ -1,0 +1,49 @@
+/* Login form */
+.form-login-icon-title {
+    background-image: url("../images/icons/small/locked.png")
+}
+
+.form-login-header {
+    background: transparent url("../images/icons/large/lock.png") no-repeat 97% 50%;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 10px 45px 10px 10px;
+}
+
+.form-login-header .error {
+    color: red;
+}
+
+.form-login-icon-login {
+    background-image: url("../images/icons/medium/login.png")
+}
+
+.form-login-icon-cancel {
+    background-image: url("../images/icons/medium/close.png")
+}
+
+.form-login-warning {
+    background: url("../images/icons/small/warning.png") no-repeat center left;
+    padding: 2px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+/* Navigation */
+
+.expand {
+    background-image: url('../images/icons/small/expand.png') !important;
+}
+
+.collapse {
+    background-image: url('../images/icons/small/collapse.png') !important;
+}
+
+.datalink div{
+   text-decoration: underline;
+    cursor: pointer;
+}
+
+.logout {
+    background-image: url('../images/icons/small/logout.png') !important;
+}
